@@ -1,0 +1,26 @@
+from aenum import MultiValueEnum
+
+
+class OccurrenceEnum(MultiValueEnum):
+
+    HOMICIDIO_DOLOSO = "Homicídio Doloso","HOMICÍDIO DOLOSO "
+    HOMICIDIO_DOLOSO_TRANSITO = "Homicídio Doloso no Trânsito","HOMICÍDIO DOLOSO POR ACIDENTE DE TRÂNSITO",
+    HOMICIDIO_CULPOSO = "Homicídio Culposo","HOMICÍDIO CULPOSO OUTROS"
+    HOMICIDIO_CULPOSO_TRANSITO = "Homicídio Culposo no Trânsito","HOMICÍDIO CULPOSO POR ACIDENTE DE TRÂNSITO"
+    TENTATIVA_HOMICIDIO = "Tentativa de Homicídio","TENTATIVA DE HOMICÍDIO"
+    LESAO_MORTE = "Lesão Corporal Seguida de Morte", "LESÃO CORPORAL SEGUIDA DE MORTE"
+    LESAO_DOLOSA = "Lesão Corporal Dolosa", "LESÃO CORPORAL DOLOSA"
+    LESAO_TRANSITO = "Lesão Corporal Culposa no Trânsito", "LESÃO CORPORAL CULPOSA POR ACIDENTE DE TRÂNSITO"
+    LESAO_CULPOSA = "Lesão Corporal","LESÃO CORPORAL CULPOSA - OUTRAS"
+    LATROCINIO = "Latrocínio","LATROCÍNIO"
+    ESTUPRO = "Estupro","ESTUPRO", "ESTUPRO DE VULNERÁVEL"
+    ROUBO_OUTROS = "Roubo","ROUBO - OUTROS"
+    ROUBO_VEICULO = "Roubo de Veículo","ROUBO DE VEÍCULO"
+    ROUBO_BANCO = "Roubo a Banco","ROUBO A BANCO"
+    ROUBO_CARGA = "Roubo de Carga","ROUBO DE CARGA"
+    FURTO = "Furto","FURTO - OUTROS"
+    FURTO_VEICULO = "Furto de Veículo","FURTO DE VEÍCULO"
+    OUTRO = "NOT_USED", "TOTAL DE ROUBO - OUTROS ", "TOTAL DE ESTUPRO ", "Nº DE VÍTIMAS EM LATROCÍNIO", "Nº DE VÍTIMAS EM HOMICÍDIO DOLOSO POR ACIDENTE DE TRÂNSITO", "Nº DE VÍTIMAS EM HOMICÍDIO DOLOSO "
+
+
+    
