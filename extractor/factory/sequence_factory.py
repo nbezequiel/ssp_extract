@@ -10,7 +10,7 @@ loop = LoopAction()
 years = Node("#conteudo_ddlAnos option", 'years', loop)
 
 departments = Node("#conteudo_ddlDelegacias option",
-                      'department_name', loop)
+                      'department', loop)
 
 occurrences = Node("#conteudo_btnMensal", 'occurrences', click)
 

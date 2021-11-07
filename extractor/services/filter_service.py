@@ -30,7 +30,7 @@ class Filter:
         return Occurrence.objects(year = year).distinct(DEPARTMENT);
 
     def _filter_departments(self, elements, department):
-        filtered_list = list(filter(lambda it: it.text == department, elements))
+        filtered_list = list(filter(lambda it: department in it.text, elements))
         index = elements.index(filtered_list[0]) + 1
         if index != 119:
             return elements[index:]
@@ -49,7 +49,7 @@ class Filter:
         elif node.desc == YEAR:
                 return self._filter_years(elements, latest.year)
         elif node.desc == DEPARTMENT:
-                return self._filter_departments(elements, latest.department_name)
+                return self._filter_departments(elements, latest.department)
         else:
             raise Exception()
 
